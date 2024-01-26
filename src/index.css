@@ -1,0 +1,427 @@
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://1.bp.blogspot.com/-th2V7Os2H0E/X5TG2qsoUVI/AAAAAAAAU6w/tsKIdEpahu8Ziz9OHkxznuV3k8WD1_qWQCLcBGAsYHQ/w1200-h630-p-k-no-nu/122412845_4589628324412168_6700104089761755001_o.jpg");
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+header,
+main,
+nav {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+header {
+  background: url("public/logotipocamion.jpg") center/cover no-repeat;
+  text-align: center;
+  padding: 2em 0;
+  position: relative;
+  animation: aparecer 0.5s ease 0.5s forwards;
+}
+
+.main-home {
+  position: relative;
+}
+
+.text-container {
+  background-color: rgba(0, 138, 252, 0.8); 
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+.mapa {
+  margin-top: 15px;
+  background-color: rgba(0, 138, 252, 0.8); 
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 53.3vh;
+}
+main{
+  flex: 1;
+}
+main {
+  animation: aparecer 0.5s ease 1.5s forwards;
+}
+
+nav {
+  animation: aparecer 0.5s ease 1s forwards;
+}
+
+.btn-a {
+  color: rgb(9, 98, 231);
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+a{
+  color: aliceblue;
+}
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+}
+footer .subheader p {
+  color: #fcfcfc; 
+  font-size: 18px; 
+  margin: 3px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #0066ff;
+}
+
+
+
+
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+
+header .logo h1 {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 69px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  color: #007BFF;
+  margin-bottom: 0.5em;
+}
+
+
+nav {
+  background-color: #007BFF;
+  padding: 15px 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #007BFF;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  margin: 0 20px;
+  transition: font-size 0.2s;
+}
+
+nav a:hover {
+  color: #66C2D3;
+
+}
+
+nav a {
+  color: white;
+}
+
+.div-formulario{
+  background-color: #0065fd;
+  border-radius: 30px;
+  opacity: .95;
+}
+
+.formulario{
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+  background-color: #000;
+  opacity: 0.9;
+}
+
+.contact-form{
+  --form-ok-color: #4caf50;
+  --form-error-color: #f44336;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  }
+  
+  .contact-form > *{
+      padding: 0.5rem;
+      margin: 1rem auto;
+      display: block;
+      width: 100%;
+  }
+  .contact-form textarea{
+      resize: none;
+  }
+  
+  .contact-form legend,
+  .contact-form-response {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea{
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .contact-form input[type="submit"]{
+      width: 50%;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  
+  .contact-form *::placeholder{
+      color: #000;
+  }
+  
+  .contact-form [required]:valid{
+      border: thin solid var(--form-ok-color);
+  }
+  .contact-form [required]:invalid{
+      border: thin solid var(--form-error-color);
+  }
+  
+  .contact-form-error{
+      margin-top: -1rem;
+      font-size: 80%;
+      background-color: var(--form-error-color);
+      color: #fff;
+      transition: all 800ms ease;
+  }
+  
+  .contact-form-error.is-active{
+      display: block;
+      animation: show-message 1s 1 normal 0s ease-out both;
+  }
+  
+  .none {
+      display: none;
+  
+  }
+  
+
+
+
+@media (max-width: 768px) {
+
+  body{
+    position: relative;
+    min-height: 100vh;
+    z-index: 9999;
+  }
+  
+  header .logo h1 {
+      font-size: 60px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav li {
+      margin: 10px 0;
+  }
+
+  .producto {
+      padding: 10px;
+      margin: 10px 0;
+  }
+
+  .productos-container {
+      margin-top: 15px;
+  }
+
+
+  .footer p {
+    margin: 5px 0;
+  }
+
+}
+
+
+.productos-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  border: 3px solid blue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  position: relative;
+}
+
+.descripcion {
+  background: none;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+
+.producto {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 255, 0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  min-width: 300px;
+  max-width: 100%;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 100%; 
+}
+.producto img {
+  width: 100%; 
+  max-height: 300px; 
+  border-radius: 5px;
+}
+
+.producto p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  flex-grow: 1; 
+}
+
+
+.producto:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+@keyframes aparecer {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.producto p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container-wsp{
+  display: inline-block;
+  text-align: center;
+  padding: 6px;
+  margin: 6px;
+  margin-bottom: 12px;
+  border: thin solid rgb(82, 80, 80);
+  border-radius: 50px;
+}
+
+.container-wsp:hover{
+  background-color:#0066ff;
+}
+
+.container-wsp a{
+  text-decoration: none;
+  color: #fff;
+}
+/*ICONO WHATSAPP*/
+@font-face {
+  font-family: 'fontello';
+  src: url('./font/fontello.eot?31979546');
+  src: url('./font/fontello.eot?31979546#iefix') format('embedded-opentype'),
+       url('./font/fontello.woff2?31979546') format('woff2'),
+       url('./font/fontello.woff?31979546') format('woff'),
+       url('./font/fontello.ttf?31979546') format('truetype'),
+       url('./font/fontello.svg?31979546#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  color: #4caf50;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+
+  font-variant: normal;
+  text-transform: none;
+
+  line-height: 1em;
+
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-whatsapp:before { content: '\f232'; } /* '' */
