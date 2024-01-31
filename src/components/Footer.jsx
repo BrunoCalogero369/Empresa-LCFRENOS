@@ -15,7 +15,9 @@ const Footer = () => {
   </a>
 </div>
 <hr />
-        <p>Horario de atención al público: de Lunes a Viernes 8:00am a 12pm y de 14:00pm a 17:30pm. Sábados de 8:00am a 12:00pm</p>
+              <p>Horario de atención al público:</p>
+           <p>Lunes a Viernes de 8:00am a 12pm y de 14:00pm a 17:30pm.</p>
+            <p>Sábados de 8:00am a 12:00pm</p>
 <hr />
         <p>Dirección: Italia 3879 - Rosario, Santa Fe</p>
       </footer>
